@@ -1,0 +1,1216 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+body {
+font-family: raleway;
+margin: 0px auto;
+}
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.main-content h1 {
+font-size: 15pt;
+margin: 0px;
+padding-top: -10px;
+
+}
+
+input[type="color-file"]{
+  display: none;
+}
+
+input[type="font-file"]{
+  display: none;
+}
+
+nav{
+  background-color: #e9e9e9;
+  padding: 10px;
+  width: 107%;
+}
+.topnav-right a {
+ 
+  text-decoration: none;
+  color: black;
+  margin:5px;
+ 
+}
+
+.topnav-right {
+  padding-top: 10px; 
+  padding-left: 10px;
+  margin: 10px;
+}
+
+
+
+.topnav-right a:hover {
+  font-weight: 800;
+      color:#4ca0af;
+}
+nav img {
+  width: 150px;
+  height: 30px;
+}
+
+label{
+  border: 2px;
+  color:white;
+  
+}
+
+#uploadedImage {
+  width:100%;
+}
+#uploadedImage-color {
+  width:100%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content {
+  border-width: 10px #000;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+.font-button {
+  margin: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  width: 55%;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 10pt;
+  border: 3px dashed #4ca0af;
+}
+
+.font-button:hover {
+  background-color: #cecece;
+}
+
+
+.color-button {
+  margin: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  width: 55%;
+
+  text-align: center;
+  border-radius: 30px;
+  font-size: 10pt;
+  border: 3px dashed #4ca0af;
+}
+.color-button:hover {
+  background-color: #cecece;
+}
+
+footer {
+  background-color: #e9e9e9;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+  float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/*
+Results page info here: 
+*/
+
+.results-page {
+  padding: 20px;
+}
+
+.results-page h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+/*
+API info here 
+*/
+
+.api-information {
+  padding: 30px;
+}
+
+.api-information img {
+  width: 200px;
+  height: 100px;
+  display:block;
+  padding: 30px;
+}
+
+.api-information p {
+  padding-bottom: 50px;
+  font-weight: normal;
+}
+
+.api-information h1 {
+  font-weight: 800;
+  color: #0093a7;
+  
+}
+
+.api-information h3 {
+  font-weight: normal;
+  
+}
+
+.api-information button {
+
+  color: white;
+  background-color: #0093a7;
+  padding: 15px;
+  width: 60%;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 12pt;
+
+}
+.api-information button:hover {
+  background-color: #076e7c;
+}
+
+button {
+  background-color: #4ca0af;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+button:hover {
+  background-color: #377783; 
+
+}
+
+.result{
+  
+  padding-top: 0px;
+  padding-bottom: 100px;
+  display: flex;
+  place-content: center;
+ 
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#status{
+  height:70px;  
+  width:96%;
+  font-size: 12px; 
+  padding:5px;
+  overflow: auto;
+  
+}
+
+#tex {
+  
+  margin: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  height: 100%;
+  border-radius: 30px;
+  border: 3px dashed #4ca0af;
+  font-weight: bold;
+  font-size: 15pt;
+  margin-left: 60px;
+  text-align: center;
+
+
+
+}
+
+.color-boxes-whole{
+ 
+  border: 3px dashed #4ca0af;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  height: 100%;
+  margin: 20px;
+  width: 60%;
+  border-radius: 30px;
+  justify-content: center;
+  
+}
+
+
+.color-names{
+ 
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  height: 100%;
+  margin: 20px;
+  width: 50%;
+  border-radius: 30px;
+  
+}
+
+.color-boxes{
+ 
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  height: 100%;
+  margin: 20px;
+  border-radius: 30px;
+  width: fit-content;
+  
+}
+
+
+#box1-name {
+  /* width: 100%; */
+  margin: 5px;
+  padding: 5px;
+  border-radius: 30px;
+  text-align: right;
+
+
+} 
+#box2-name{
+  /* width: 100%; */
+  margin: 5px;
+  padding: 5px;
+  border-radius: 30px;
+  /*text-align: right;*/
+  text-align: right;
+
+} 
+#box3-name {
+  /* width: 100%; */
+  margin: 5px;
+  padding: 5px;
+  border-radius: 30px;
+  /*text-align: right;*/
+  text-align: right;
+}
+
+#box1 {
+  /* width: 100%; */
+  margin: 5px;
+  padding: 5px;
+  border-radius: 30px;
+  
+
+
+} 
+#box2{
+  /* width: 100%; */
+  margin: 5px;
+  padding: 5px;
+  border-radius: 30px;
+
+
+
+} 
+#box3 {
+  /* width: 100%; */
+  margin: 5px;
+  padding: 5px;
+  border-radius: 30px;
+  
+
+
+} 
+
+
+
+
+
+.about-information {
+  padding: 30px;
+  padding-left: 60px;
+  padding-right: 40px;
+}
+
+.about-information img {
+  height:15%;
+  width: 15%;
+align-items: center;
+  display:block;
+  padding: 30px;
+}
+
+.about-information p {
+margin-bottom: 20px;
+padding-bottom: 50px;
+ font-weight: normal;
+}
+
+.about-information h1 {
+  font-weight: 800;
+  color: #0093a7;
+  
+}
+
+.about-information h3 {
+  font-weight: normal;
+
+  
+}
+
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 30em) {
+  /* Style adjustments for viewports that meet the condition */
+
+  
+  body {
+    font-family: raleway;
+    margin: 0px auto;
+    }
+    html {
+      color: #222;
+      font-size: 1em;
+      line-height: 1.4;
+    }
+    
+    input[type="color-file"]{
+      display: none;
+    }
+    
+    input[type="font-file"]{
+      display: none;
+    }
+    
+    nav{
+      background-color: #e9e9e9;
+      padding: 10px;
+      width: 100%;
+      display: flex;
+    }
+
+    .topnav-right a {
+      padding: 20px; 
+      text-decoration: none;
+      color: black;
+      
+     
+    }
+
+    .topnav-right {
+      padding-top: 5px; 
+      padding-left: 160px;
+    }
+
+    .topnav-right a:hover {
+      font-weight: 800;
+      color:#4ca0af;
+    }
+
+    nav img {
+      width: 250px;
+      height: 50px;
+      margin-right: 540px;
+      margin-left: 40px;
+    }
+    
+    label{
+      border: 2px;
+      color:white;
+      
+    }
+
+
+    .main-content h1 {
+      font-size: 30pt;
+      }
+    
+    .buttons {
+      padding-top: 0px;
+      display: flex;
+      flex-direction: row;
+      place-content: center;
+    }
+    
+    .main-content {
+      border-width: 10px #000;
+      text-align: center;
+      padding-top: 30px;
+   
+    }
+    
+    .font-button {
+      margin: 20px;
+      background-color: #ffffff;
+      padding: 20px;
+      width: 25%;
+      height:100%;
+      text-align: center;
+      border-radius: 30px;
+      font-size: 15pt;
+      border: 3px dashed #4ca0af;
+    
+    }
+    
+
+    .color-button {
+      margin: 20px;
+      background-color: #ffffff;
+      padding: 20px;
+      width: 25%;
+      height:100%;
+      text-align: center;
+      border-radius: 30px;
+      font-size: 15pt;
+      border: 3px dashed #4ca0af;
+    }
+
+    footer {
+      background-color: #e9e9e9;
+      padding: 10px;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      
+    }
+    
+    footer img {
+      width: 50px;
+      height: 50px;
+      float: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .results-page h1 {
+      font-size: 40px;
+      text-align: center;
+    }
+
+    .api-information {
+      padding: 30px;
+      margin-right: 100px;
+      margin-left: 40px;
+    }
+
+
+
+#uploaded-file{
+  display:none;
+}
+#uploaded-file-color{
+  display:none;
+}
+.result{
+  
+  padding-top: 0px;
+  padding-bottom: 100px;
+  display: flex;
+  place-content: center;
+ 
+  flex-direction: row;
+}
+
+
+.color-boxes-whole{
+ 
+  border: 3px dashed #4ca0af;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  height: 100%;
+  margin: 20px;
+  width: 40%;
+  border-radius: 30px;
+  justify-content: center;
+  
+}
+
+
+.color-names{
+ 
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  height: 100%;
+  margin: 20px;
+  width: 50%;
+  border-radius: 30px;
+  
+}
+
+.color-boxes{
+ 
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  height: 100%;
+  margin: 20px;
+  border-radius: 30px;
+  width: fit-content;
+  
+}
+
+
+#box1-name {
+  /* width: 100%; */
+  margin: 5px;
+  padding: 5px;
+  border-radius: 30px;
+  text-align: right;
+
+
+} 
+#box2-name{
+  /* width: 100%; */
+  margin: 5px;
+  padding: 5px;
+  border-radius: 30px;
+  /*text-align: right;*/
+  text-align: right;
+
+} 
+#box3-name {
+  /* width: 100%; */
+  margin: 5px;
+  padding: 5px;
+  border-radius: 30px;
+  /*text-align: right;*/
+  text-align: right;
+}
+
+#box1 {
+  /* width: 100%; */
+  margin: 5px;
+  padding: 5px;
+  border-radius: 30px;
+  
+
+
+} 
+#box2{
+  /* width: 100%; */
+  margin: 5px;
+  padding: 5px;
+  border-radius: 30px;
+
+
+
+} 
+#box3 {
+  /* width: 100%; */
+  margin: 5px;
+  padding: 5px;
+  border-radius: 30px;
+  
+
+
+} 
+
+
+#status{
+  height:70px;  
+  width:96%;
+  font-size: 12px; 
+  padding:5px;
+  overflow: auto;
+}
+#statuscolor{
+  height:70px;  
+  width:96%;
+  font-size: 12px; 
+  padding:5px;
+  overflow: auto;
+}
+#tex {
+  
+  margin: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  height: 100%;
+  border-radius: 30px;
+  border: 3px dashed #4ca0af;
+  font-weight: bold;
+  font-size: 15pt;
+  text-align: center;
+
+
+
+  
+}
+
+.uploaded-file img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.uploaded-file-color img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+button {
+  background-color: #4ca0af;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+button:hover {
+  background-color: #377783; 
+
+}
+
+.api-information button {
+
+  color: white;
+  background-color: #0093a7;
+  padding: 15px;
+  width: 15%;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 12pt;
+
+}
+.api-information button:hover {
+  background-color: #076e7c;
+}
+
+
+
+.about-information {
+  padding: 30px;
+  padding-left: 60px;
+  padding-right: 40px;
+}
+
+.about-information img {
+  height:15%;
+  width: 15%;
+align-items: center;
+  display:block;
+  padding: 30px;
+}
+
+.about-information p {
+margin-bottom: 20px;
+padding-bottom: 10px;
+ font-weight: normal;
+}
+
+.about-information h1 {
+  font-weight: 800;
+  color: #0093a7;
+  
+}
+
+.about-information h3 {
+  font-weight: normal;
+
+  
+}
+
+
+
+
+@media only screen and (device-width: 768px) {
+  /* For general iPad layouts */
+  
+  body {
+    font-family: raleway;
+    margin: 0px auto;
+    }
+    html {
+      color: #222;
+      font-size: 1em;
+      line-height: 1.4;
+    }
+    
+    input[type="color-file"]{
+      display: none;
+    }
+    
+    input[type="font-file"]{
+      display: none;
+    }
+    
+    nav{
+      background-color: #e9e9e9;
+      padding: 10px;
+      width: 100%;
+
+    }
+
+    .topnav-right a {
+      padding: 20px; 
+      text-decoration: none;
+      color: black;
+      
+     
+    }
+
+    .topnav-right {
+      padding-top: 5px; 
+      display: flex;
+      flex-direction: row;
+   
+    }
+
+    .topnav-right a:hover {
+      font-weight: 800;
+      color:#4ca0af;
+    }
+
+    nav img {
+      width: 250px;
+      height: 50px;
+      margin-right: 540px;
+      margin-left: 40px;
+    }
+    
+    label{
+      border: 2px;
+      color:white;
+      
+    }
+
+
+    .main-content h1 {
+      font-size: 30pt;
+      }
+    
+    .buttons {
+      padding-top: 0px;
+      display: flex;
+      flex-direction: row;
+      place-content: center;
+    }
+    
+    .main-content {
+      border-width: 10px #000;
+      text-align: center;
+      padding-top: 30px;
+   
+    }
+    
+    .font-button {
+      margin: 20px;
+      background-color: #ffffff;
+      padding: 20px;
+      width: 25%;
+      height:100%;
+      text-align: center;
+      border-radius: 30px;
+      font-size: 15pt;
+      border: 3px dashed #4ca0af;
+    
+    }
+    
+
+    .color-button {
+      margin: 20px;
+      background-color: #ffffff;
+      padding: 20px;
+      width: 25%;
+      height:100%;
+      text-align: center;
+      border-radius: 30px;
+      font-size: 15pt;
+      border: 3px dashed #4ca0af;
+    }
+
+    footer {
+      background-color: #e9e9e9;
+      padding: 10px;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      
+    }
+    
+    footer img {
+      width: 50px;
+      height: 50px;
+      float: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .results-page h1 {
+      font-size: 40px;
+      text-align: center;
+    }
+
+    .api-information {
+      padding: 30px;
+      margin-right: 100px;
+      margin-left: 40px;
+    }
+
+
+
+#uploaded-file{
+  display:none;
+}
+#uploaded-file-color{
+  display:none;
+}
+.result{
+  
+  padding-top: 0px;
+  padding-bottom: 100px;
+  display: flex;
+  place-content: center;
+ 
+  flex-direction: row;
+}
+
+#status{
+  height:70px;  
+  width:96%;
+  font-size: 12px; 
+  padding:5px;
+  overflow: auto;
+}
+
+#tex {
+  
+  margin: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  height: 100%;
+  border-radius: 30px;
+  border: 3px dashed #4ca0af;
+  font-weight: bold;
+  font-size: 15pt;
+  text-align: center;
+
+
+
+  
+}
+
+.uploaded-file img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.uploaded-file-color img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+button {
+  background-color: #4ca0af;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+button:hover {
+  background-color: #377783; 
+
+}
+
+.api-information button {
+
+  color: white;
+  background-color: #0093a7;
+  padding: 15px;
+  width: 15%;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 12pt;
+
+}
+.api-information button:hover {
+  background-color: #076e7c;
+}
+
+
+
+}
+
+
+
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+}
